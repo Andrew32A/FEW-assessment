@@ -4,9 +4,9 @@
 
 html {
     display: flex;
-    flex-direction: column row;
     justify-content: center;
     align-items: center;
+
 }
 
 main {
@@ -52,6 +52,7 @@ section {
     border: 1px solid;
 }
 
-/* .colorBlob {
- add transition animation
-} */
+/* transition animation */
+#colorBlob {
+    transition-duration: 1000ms;
+}
