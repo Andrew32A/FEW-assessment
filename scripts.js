@@ -8,7 +8,7 @@ const heightDisplay = document.getElementById('heightDisplay')
 const colorInput = document.getElementById('colorInput')
 const colorDisplay = document.getElementById('colorDisplay')
 
-const blob = document.getElementById('colorBlob')   
+const blob = document.getElementById('colorBlob')
 
 // placeholders for page refresh
 widthInput.value = 100
@@ -20,10 +20,10 @@ heightDisplay.innerHTML = '100px'
 colorInput.value = '#000000'
 colorDisplay.innerHTML = '#000000'
 
-// color blob on bottom right
-// blob.style.width = `${widthInput.value}`
-// blob.style.height = `${heightInput.value}`
-// blob.style.backgroundColor = `${colorInput.value}`
+// placeholder color blob on bottom right
+blob.style.width = `${widthInput.value}px`
+blob.style.height = `${heightInput.value}px`
+blob.style.backgroundColor = `${colorInput.value}`
 
 // event listeners
 widthInput.addEventListener('input', update)
@@ -35,5 +35,8 @@ function update(e) {
     widthDisplay.innerHTML = `${widthInput.value}px`
     heightDisplay.innerHTML = `${heightInput.value}px`
     colorDisplay.innerHTML = `${colorInput.value}`
-    // colorBlob.innerHTML = `${colorInput.value}`
+
+    blob.style.width = `${widthInput.value}px`
+    blob.style.height = `${heightInput.value}px`
+    blob.style.backgroundColor = `${colorInput.value}`
 }
