@@ -44,15 +44,32 @@ section {
     padding: 0.5em;
 }
 
-.c h2, .c p{
+.c h2, .c p {
     margin: 2px;
 }
 
+.b p {
+    margin: .5em;
+}
+
 .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid;
+}
+
+input {
+    border: 1px solid;
+    padding: 0.5em;
+}
+
+#colorInput {
+    height: 25%;
 }
 
 /* transition animation */
 #colorBlob {
+    border: 1px solid black;
     transition-duration: 1000ms;
 }
